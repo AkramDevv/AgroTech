@@ -1,15 +1,87 @@
-# Mobile
+############################################################
+# GENERAL
+############################################################
+
+.DS_Store
+.env
+.env.*
+!.env.example
+
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.vscode-test
+
+############################################################
+# MOBILE (React Native / Expo)
+############################################################
+
 mobile/node_modules/
 mobile/.expo/
 mobile/dist/
 mobile/web-build/
+mobile/.expo-shared/
 
-# Backend
+mobile/android/app/build/
+mobile/android/build/
+
+mobile/ios/build/
+mobile/ios/Pods/
+
+mobile/.npm
+mobile/.cache
+mobile/.parcel-cache
+mobile/.eslintcache
+
+############################################################
+# BACKEND (Python / FastAPI)
+############################################################
+
 backend/venv/
-backend/__pycache__/
-backend/*.pyc
+backend/.venv/
 
-# General
-.env
-.DS_Store
-npm-debug.log*
+backend/__pycache__/
+backend/**/*.pyc
+backend/**/*.pyo
+backend/**/*.pyd
+
+backend/.pytest_cache/
+backend/.mypy_cache/
+backend/.ruff_cache/
+backend/.hypothesis/
+
+backend/htmlcov/
+backend/.coverage
+backend/.coverage.*
+backend/coverage.xml
+
+############################################################
+# PYTHON BUILD FILES
+############################################################
+
+backend/build/
+backend/dist/
+backend/*.egg-info/
+backend/.Python
+backend/pip-log.txt
+
+############################################################
+# JUPYTER
+############################################################
+
+backend/.ipynb_checkpoints/
+
+############################################################
+# IDE
+############################################################
+
+.idea/
+
+############################################################
+# OS
+############################################################
+
+Thumbs.db
