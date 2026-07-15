@@ -1,0 +1,15 @@
+# Mobile
+mobile/node_modules/
+mobile/.expo/
+mobile/dist/
+mobile/web-build/
+
+# Backend
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+
+# General
+.env
+.DS_Store
+npm-debug.log*
